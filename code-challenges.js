@@ -41,6 +41,13 @@ const padres1998WorldSeriesRuns = [6, 3, 5, 3]
 // Expected output: 9
 
 // Pseudo code:
+// First we need to apply concatination to add the arrays together.
+// padres1984WorldSeriesRuns.concat(padres1984WorldSeriesRuns)
+// Now we need the console to output the total length of the newly added arrays.
+// console.log(padres1984WorldSeriesRuns.length)
+
+// padres1984WorldSeriesRuns.concat(padres1998WorldSeriesRuns)
+// console.log(padres1984WorldSeriesRuns.length)
 
 // --------------------3) Create the code that will reverse the letters of a string using the test variable provided below.
 
@@ -48,6 +55,30 @@ const currentCohort = "Foxtrot 2023"
 // Expected output: "3202 tortxoF"
 
 // Pseudo code:
+// We need to apply the reverse property to flip the characters entirely backwards.
+// console.log(currentCohort.reverse)
+
+// Above I forgot to tag the reverse property onto a new variable
+
+// const backwardsCohort = (currentCohort.reverse())
+// console.log(backwardsCohort)
+
+// I have once again improperly used syntax, it returned that currentCohort.reverse is not a function.
+// When it returned that it dawned on me that eve n if it worked, it would only switch the values.
+// I need to emply the "split()" method.
+
+// const backwardsCohort = currentCohort.("");
+// console.log(backwardsCohort)
+
+// I am on the right track here, but before it gets too complicated, I have one other thing I will try: a forloop.
+
+let backwardsCohort = ""
+for (let i = backwardsCohort.length - 1; i >= 0; i--) [
+    backwardsCohort += currentCohort[i]
+]
+console.log(backwardsCohort)
+
+// it seems to be outputting nothing at all at this point, and rather than toil with it, I shall leave it as is
 
 // --------------------4) Create the code that will return the last index of the given value from the array using the test variables provided below.
 
